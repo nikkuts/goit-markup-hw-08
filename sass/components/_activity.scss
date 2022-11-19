@@ -1,4 +1,8 @@
 .activity {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+    
     @extend %section;
     background: var(--primary-background-color);
 }

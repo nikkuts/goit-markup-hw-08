@@ -1,14 +1,14 @@
 .header {
     border-bottom: 1px solid #ECECEC;
 
-    & .logo {
+    & .logo {       
+        // padding-top: 24px;
+        // padding-bottom: 25px;
+
         @media screen and (min-width: 480px) {
             padding-top: 16px;
             padding-bottom: 16px;  
         } 
-        
-        // padding-top: 24px;
-        // padding-bottom: 25px;
     }
 }
 

@@ -1,11 +1,4 @@
-.hero {
-    @media screen and (min-width: 480px) {
-        width: 480px;
-        height: 400px;
-        padding-top: 118px;
-        padding-bottom: 118px; 
-    }
-    
+.hero {   
     // max-width: 1600px;
     // height: 600px;
         margin-left: auto;
@@ -20,15 +13,16 @@
         ), 
         url(../images/overlay.jpg);
     background-color: #2F303A;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+        height: 400px;
+        padding-top: 118px;
+        padding-bottom: 118px; 
+    }
 }
 
-.hero__title {
-    @media screen and (min-width: 480px) {
-        width: 360px;
-        font-size: 26px;
-        line-height: calc(42/26);
-    }
-    
+.hero__title {   
     // width: 696px;
     margin-left: auto;
     margin-right: auto;
@@ -41,6 +35,12 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-background-color);
+
+    @media screen and (min-width: 480px) {
+        width: 360px;
+        font-size: 26px;
+        line-height: calc(42/26);
+    }
 }
 
 .hero__btn {

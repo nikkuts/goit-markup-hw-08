@@ -4,38 +4,59 @@
     padding-bottom: 60px;
 
     & .logo {
-        margin-bottom: 20px; 
+        // margin-bottom: 20px;
+        
+        @media screen and (min-width: 480px) {
+            margin-bottom: 28px;
+            text-align: center;
+        }
     }
 }
 
 .footer-box {
-    display: flex;
-    align-items: baseline;
+    // display: flex;
+    // align-items: baseline;
 }
 
 .address-list {
     @extend %list;
 
+    @media screen and (min-width: 480px) {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
     & .item {
-    width: 231px;
+    // width: 231px;
     }
 
     & .item:not(:last-child) {
-    margin-bottom: 9px;
+    // margin-bottom: 9px;
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 12px;
+    }
     }
 }
 
-
 .address-map-link {
     font-style: normal;
-    line-height: calc(24/14);
+    // line-height: calc(24/14);
     color: var(--primary-background-color);
+
+    @media screen and (min-width: 480px) {
+        line-height: calc(16/14);
+    }
 }
 
 .address-link {
     font-style: normal;
-    line-height: calc(24/14);
+    // line-height: calc(24/14);
     color: rgba(255, 255, 255, 0.6);
+
+    @media screen and (min-width: 480px) {
+        line-height: calc(16/14);
+    }
 }
 
 .social {
@@ -59,9 +80,9 @@
 }
 
 .form-email {
-    display: flex;
-    width: 570px;
-    margin-left: 93px;
+    // display: flex;
+    // width: 570px;
+    // margin-left: 93px;
 }
 
 .form-email-field {
