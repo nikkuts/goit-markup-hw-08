@@ -20,6 +20,19 @@
             <div class="main-nav container">
                 <nav class="nav">
                     <a class="logo link" href="./index.html">Web<span class="black">Studio</span></a>
+                    <button type="button" class="menu-button is-open"
+                    aria-expanded="false"
+                    aria-controls="menu-container"
+                    data-menu-button>
+                        <svg width="40" height="40" aria-label="Мобільне меню">
+                            <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+                            <use class="icon-cross" href="./images/symbol-defs.svg#icon-cross"></use>
+                        </svg>
+                    </button>
+                    <div class="menu-container is-open" id="menu-container"
+                    data-menu>
+
+                    </div>
                     <!-- <ul class="nav-list">
                         <li class="item"><a class="current-link link" href="./index.html">Студія</a></li>
                         <li class="item"><a class="nav-link link" href="./portfolio.html">Портфоліо</a></li>
@@ -442,5 +455,6 @@
             </div>
         </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
     </body>
 </html>

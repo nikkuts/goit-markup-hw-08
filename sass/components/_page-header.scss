@@ -1,6 +1,10 @@
 .header {
     border-bottom: 1px solid #ECECEC;
 
+    @media screen and (min-width: 480px) {
+        position: relative;
+    }
+
     & .logo {       
         // padding-top: 24px;
         // padding-bottom: 25px;
@@ -17,10 +21,49 @@
 //     align-items: center;
 // }
 
-// .nav {
-//     display: flex;
-//     align-items: center;
-//     }
+.nav {
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: 480px) {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 480px) {
+
+    .menu-button {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+
+        & .icon-cross {
+            display: none;
+        }
+
+        &.is-open .icon-cross {
+            display: block;
+        }
+
+        &.is-open .icon-menu {
+            display: none;
+        }
+    }
+
+    .menu-container {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        
+        &.is-open {
+            display: block;
+        }
+    }
+}
 
 .nav-list {
     @extend %list;
