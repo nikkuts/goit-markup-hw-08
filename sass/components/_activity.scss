@@ -2,8 +2,7 @@
     @media screen and (max-width: 1199px) {
         display: none;
     }
-    
-    @extend %section;
+    padding-bottom: 94px;
     background: var(--primary-background-color);
 }
 

@@ -28,13 +28,13 @@
 }
 
 @media screen and (min-width: 480px) {
-  .portfolio, .clients, .team, .activity, .benefits-list {
+  .portfolio, .clients, .team, .benefits-list {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .portfolio, .clients, .team, .activity, .benefits-list {
+  .portfolio, .clients, .team, .benefits-list {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -81,7 +81,6 @@ body {
 }
 
 .container {
-  max-width: 480px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -244,6 +243,11 @@ body {
     display: none;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-list .item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contacts-list {
     display: flex;
@@ -266,11 +270,15 @@ body {
     line-height: 1.1666666667;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .contacts-link {
     display: flex;
     align-items: center;
     gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-link {
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -319,18 +327,18 @@ body {
 .hero {
   margin-left: auto;
   margin-right: auto;
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay.jpg);
   background-color: #2F303A;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .hero {
     width: 480px;
-    height: 400px;
-    padding-top: 118px;
-    padding-bottom: 118px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     width: 768px;
   }
@@ -400,20 +408,29 @@ body {
 .benefits {
   background: var(--primary-background-color);
 }
-@media screen and (min-width: 1200px) {
-  .benefits {
-    padding-top: 94px;
-  }
-}
 
-.benefits-list .item:not(:last-child) {
-  margin-right: 30px;
-}
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .benefits-list .item:not(:first-child) {
     margin-top: 30px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-basis: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits-list {
+    display: flex;
+  }
+  .benefits-list .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 .benefits-list__box {
   height: 120px;
   margin-bottom: 30px;
@@ -426,6 +443,18 @@ body {
     padding: 25px 190px;
   }
 }
+@media screen and (min-width: 768px) {
+  .benefits-list__box {
+    width: 354px;
+    padding: 25px 142px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits-list__box {
+    width: 270px;
+    padding: 25px 100px;
+  }
+}
 
 .benefits-list__title {
   margin-bottom: 10px;
@@ -435,7 +464,7 @@ body {
   text-transform: uppercase;
   color: var(--title-text-color);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .benefits-list__title {
     text-align: center;
   }
@@ -445,8 +474,19 @@ body {
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
 }
+@media screen and (min-width: 768px) {
+  .benefits-list__text {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits-list__text {
+    width: 270px;
+  }
+}
 
 .activity {
+  padding-bottom: 94px;
   background: var(--primary-background-color);
 }
 @media screen and (max-width: 1199px) {

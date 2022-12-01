@@ -149,8 +149,11 @@
         display: none;
     }
     
-    @media screen and (min-width: 768px) {
-
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        
+        & .item:not(:last-child) {
+            margin-bottom: 10px;
+            } 
     }
 
     @media screen and (min-width: 1200px) {
@@ -175,13 +178,13 @@
     }
 
     @media screen and (min-width: 768px) {
-
-    }
-
-    @media screen and (min-width: 1200px) {
         display: flex;
         align-items: center;
         gap: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        
         padding-top: 32px;
         padding-bottom: 32px;
     }
