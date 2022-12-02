@@ -296,7 +296,7 @@ body {
   font-weight: 700;
   color: var(--accent-color);
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .logo {
     font-size: 24px;
     line-height: 1.1666666667;
@@ -542,10 +542,31 @@ body {
     line-height: 1.1785714286;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.1666666667;
+  }
+}
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .team-list .item:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-basis: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -559,6 +580,11 @@ body {
 @media screen and (min-width: 480px) {
   .team-list__description {
     padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list__description {
+    padding-bottom: 30px;
   }
 }
 
@@ -620,6 +646,13 @@ body {
     line-height: 1.1785714286;
   }
 }
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.1666666667;
+  }
+}
 
 .clients-list {
   display: flex;
@@ -629,6 +662,11 @@ body {
 @media screen and (min-width: 480px) {
   .clients-list {
     flex-basis: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-list .item {
+    flex-basis: calc((100% - 150px) / 6);
   }
 }
 
@@ -649,6 +687,16 @@ body {
 @media screen and (min-width: 480px) {
   .clients-list__link {
     width: 210px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients-list__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-list__link {
+    width: 170px;
   }
 }
 
@@ -760,46 +808,57 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .footer .logo {
     margin-bottom: 28px;
     text-align: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer .logo {
+    margin-bottom: 20px;
+  }
+}
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-box {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-box {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .address-list {
-    margin-bottom: 30px;
     text-align: center;
   }
 }
-@media screen and (min-width: 480px) {
-  .address-list .item:not(:last-child) {
-    margin-bottom: 12px;
-  }
+.address-list .item:not(:last-child) {
+  margin-bottom: 12px;
 }
 
 .address-map-link {
   font-style: normal;
+  line-height: 1.1428571429;
   color: var(--primary-background-color);
-}
-@media screen and (min-width: 480px) {
-  .address-map-link {
-    line-height: 1.1428571429;
-  }
 }
 
 .address-link {
   font-style: normal;
+  line-height: 1.1428571429;
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (min-width: 480px) {
-  .address-link {
-    line-height: 1.1428571429;
-  }
-}
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .social {
     margin-top: 60px;
     margin-bottom: 60px;
@@ -815,7 +874,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .social-text {
     text-align: center;
   }
@@ -824,6 +883,12 @@ body {
 .socialmedia-list__link--group {
   color: var(--primary-background-color);
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (min-width: 1200px) {
+  .form-email {
+    display: flex;
+  }
 }
 
 .form-email-field {
@@ -850,6 +915,11 @@ body {
 @media screen and (min-width: 480px) {
   .form-email input {
     width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-email input {
+    width: 358px;
   }
 }
 
@@ -895,11 +965,17 @@ body {
   border-radius: 4px;
   transition: background-color var(--animation-time) var(--animation-timing-function);
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .form-email button {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-email button {
+    margin-top: 36px;
+    margin-left: 12px;
   }
 }
 
