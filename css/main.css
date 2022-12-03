@@ -27,7 +27,7 @@
   margin: 0;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .portfolio, .clients, .team, .benefits-list {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -330,8 +330,38 @@ body {
   height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay.jpg);
+  background-size: cover;
   background-color: #2F303A;
+}
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay_s@1x.jpg);
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay_s@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay_m@1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay_m@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay_l@1x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay_l@2x.jpg);
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .hero {
@@ -639,7 +669,7 @@ body {
   text-align: center;
   color: var(--title-text-color);
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .clients__title {
     margin-bottom: 30px;
     font-size: 28px;

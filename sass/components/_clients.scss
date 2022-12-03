@@ -8,7 +8,7 @@
     text-align: center;
     color: var(--title-text-color);
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 1199px) {
         margin-bottom: 30px;
         font-size: 28px;
         line-height: calc(33/28);
