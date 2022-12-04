@@ -439,7 +439,7 @@ body {
   background: var(--primary-background-color);
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .benefits-list .item:not(:first-child) {
     margin-top: 30px;
   }
@@ -462,6 +462,9 @@ body {
 }
 
 .benefits-list__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 120px;
   margin-bottom: 30px;
   background-color: #F5F4FA;
@@ -470,19 +473,16 @@ body {
 @media screen and (min-width: 480px) {
   .benefits-list__box {
     width: 450px;
-    padding: 25px 190px;
   }
 }
 @media screen and (min-width: 768px) {
   .benefits-list__box {
     width: 354px;
-    padding: 25px 142px;
   }
 }
 @media screen and (min-width: 1200px) {
   .benefits-list__box {
     width: 270px;
-    padding: 25px 100px;
   }
 }
 
@@ -564,13 +564,9 @@ body {
   font-weight: 700;
   text-align: center;
   color: var(--title-text-color);
-}
-@media screen and (min-width: 480px) {
-  .team__title {
-    margin-bottom: 30px;
-    font-size: 28px;
-    line-height: 1.1785714286;
-  }
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.1785714286;
 }
 @media screen and (min-width: 1200px) {
   .team__title {
@@ -1116,6 +1112,7 @@ body {
 }
 
 .form-modal-field label {
+  display: block;
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
