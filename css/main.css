@@ -63,7 +63,7 @@ html {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -576,7 +576,7 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .team-list .item:not(:last-child) {
     margin-bottom: 30px;
   }

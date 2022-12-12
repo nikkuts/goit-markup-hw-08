@@ -23,7 +23,7 @@
     @extend %list;
     
     & .item:not(:last-child) {
-        @media screen and (min-width: 480px) and (max-width: 767px) {
+        @media screen and (max-width: 767px) {
             margin-bottom: 30px;
         }
     }
